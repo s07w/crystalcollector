@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="assets/javascript/game.js"></script>
+<title>Crystal Collector!</title>
+</head>
+
+<body>
+
+<div id="text">
+<h1>Crystal Collector</h1>
+
+<p id=para>You will be given a random number at the start of the game.
+<br><br>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+<br><br>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.
+<br><br>The value of each crystal will be hidden from you until you click on it.
+<br><br>Each time when the game starts, the game will change the value of each crystal.
+</p>
+</div>
+
+<div id="gamebox">
+<div>
+        <div id = "guessNumber"></div>
+    </div>
+    <div id =counter>
+        <p id=win>Wins:</p>
+        <p id=loss>Losses:</p> 
+    </div>
+<div id=crystals>
+    <img id="gem1" class="crystal" src="assets/images/gem1.png">
+    <img id="gem2" class="crystal" src="assets/images/gem2.png">
+    <img id="gem3" class="crystal" src="assets/images/gem3.png">
+    <img id="gem4" class="crystal" src="assets/images/gem4.png">
+</div>
+<div>
+<h2 id="score"><p>Total Score:</p></h2>
+</div>
+<div id="totalScore"><p>0</p></div>
+</div>
+
+
+
+</body>
+</html>
