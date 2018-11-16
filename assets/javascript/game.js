@@ -33,6 +33,7 @@ $(document).ready(function() {
        newNumber();
        crystalReset();
 
+    // when .crystal is clicked, add random value to total score.
     $('.crystal').on('click', function() {
         var crystalValue = ($(this).attr("data-crystalValue"));
         crystalValue = parseInt(crystalValue);
@@ -40,6 +41,7 @@ $(document).ready(function() {
         $('#totalScore').text(totalScore)
         console.log(crystalValue);
 
+        //win conditions
         if (totalScore === number) {
             alert("WINNER!");
             totalScore = 0;
@@ -49,6 +51,7 @@ $(document).ready(function() {
             newNumber();
 
         }
+        //lose conditions, both conditions reset game when met.
         else if (totalScore > number) {
             alert("Sorry, you lose! Try again!");
             totalScore = 0;
